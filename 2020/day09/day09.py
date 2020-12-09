@@ -38,6 +38,7 @@ def indices_of_sum(num: int, seq: List[int]) -> Tuple[int, int]:
                 return first, last
             if s > num:
                 break
+    return -1, -1
 
 idx = indices_of_sum(num, sequence)
 seq = sequence[idx[0]:idx[1] +1]
